@@ -117,3 +117,13 @@ h1{
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.button:hover, .special:hover{
+    background-color: rgb(255, 184, 52);
+    color: white;
+    transition: all 0.5s linear;
+}
+
+.button, .special{
+    transition: all 0.5s linear;
+}
