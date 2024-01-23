@@ -1,22 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+html, body {
+    height: 100%;
+}
+
+body {
     position: relative; /* important for bg*/
     width: 100%;
     height: 100%;   /* important for bg*/
-    padding: 1vw;
-    padding-bottom: 3vw;
     border-radius: 5vw;
     z-index: 2;      /* important for bg*/
-    /* overflow: hidden;  */
+    /* overflow: hidden; added overflow: hidden to prevent scrollbars */
 }
 
-body::before{
+body::before {
     content: "";
-    position: absolute;
+    position: fixed; /* use fixed instead of absolute for full viewport coverage */
     background-image: url(bg_test.jpg);
     background-size: cover;
     background-position: center;
