@@ -31,14 +31,15 @@ body::before{
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 5% 20%;
+    margin: 5% 25%;
     font-size: 20px;
+    font-weight: 600;
 }
 
 nav a {
-    margin-right: 35px;
+    /* margin-right: 20px; */
     color: white;
     padding: 5px;
     border-radius: 9px;
@@ -52,8 +53,8 @@ nav a {
     font-weight: 600;
     color: black;
     background-color: rgba(255, 166, 0, 0.808);
-    border-radius: 9px;
-    padding: 7px 17px 7px 17px;
+    border-radius: 15px;
+    padding: 10px 25px 10px 25px;
 }
 
 h1{
@@ -118,12 +119,53 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.button:hover, .special:hover{
+.button:hover, .special:hover, .circle:hover{
     background-color: rgb(255, 184, 52);
     color: white;
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
 }
 
-.button, .special{
-    transition: all 0.5s linear;
+.button, .special, .circle{
+    transition: all 0.2s linear;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.circle{
+    height: 30px; /* Set a specific height, adjust as needed */
+    width: 40px; 
+    margin: 2px;
+    background-color: rgba(255, 166, 0, 0.808);
+    border-radius: 50%;
+    display: flex; /* Add display: flex; */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+}
+
+.social{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.items_soc{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    filter: brightness(0%) invert(100%);
+
+}
+
+.bottom{
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
