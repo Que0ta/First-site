@@ -54,7 +54,7 @@ nav a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     color: black;
-    background-color: rgba(255, 166, 0, 0.808);
+    background-color: rgba(255, 183, 82, 0.906);
     border-radius: 15px;
     padding: 10px 25px 10px 25px;
 }
@@ -97,7 +97,8 @@ h1{
     padding-left: 5px;
     margin-bottom: 10px;
     width: 100%;
-    color: rgba(128, 128, 128, 0.621);
+    font-weight: 700;
+    color: rgb(19, 19, 19);
 }
 
 .foot{
@@ -111,7 +112,7 @@ h1{
 }
 
 .button{
-    background-color: rgba(255, 166, 0, 0.808);
+    background-color: rgba(255, 183, 82, 0.906);
     border: none;
     margin: 8px;
     padding: 15px;
@@ -122,7 +123,7 @@ h1{
 }
 
 .button:hover, .special:hover, .circle:hover{
-    background-color: rgb(255, 184, 52);
+    background-color: rgb(255, 183, 82);
     color: white;
     transition: all 0.2s linear;
 }
@@ -132,7 +133,7 @@ h1{
 }
 
 .buttons{
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
     font-size: 25px;
@@ -161,13 +162,15 @@ h1{
     height: 50px;
     width: 50px;
     object-fit: cover;
-    filter: brightness(0%) invert(100%);
+    filter: brightness(0%) invert(95%) sepia(50%); 
 
 }
 
 .bottom{
     margin: 0 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
+    padding-bottom: 20px;
 }
